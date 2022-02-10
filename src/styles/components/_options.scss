@@ -1,0 +1,21 @@
+.option{
+    &-header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+        background-color: lighten(#000000, 30%);
+    }
+    &-list{
+        padding: 0;
+        li{
+            color: #ffffff;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .btn{
+            margin-left: 1.5rem;
+        }
+    }
+}
