@@ -21,7 +21,7 @@ module.exports = (env) => {
                 exclude: /node_modules/
             },{
                 test:/\.s?css$/,
-                use: CSSExtract({
+                use: CSSExtract.extract({
                     use: [
                         {
                             loader: 'css-loader',
@@ -39,7 +39,7 @@ module.exports = (env) => {
                 })
             }]
         },
-        plugin: [
+        plugins: [
             CSSExtract
         ],
         devtool: isProduction ? 'source-map' : 'inline-source-map',
